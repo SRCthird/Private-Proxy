@@ -107,7 +107,7 @@ This utility assumes that the `msedge` executable is available in the system's P
 
 ## Security Notes
 
-- This server should only be run in a trusted environment. Do not expose it to the public internet without adequate security measures.
+- This server should only be run in a local or trusted environment. Do not expose it to the public internet without adequate security measures.
 - Always be cautious about the URLs you open.
 
 ## License
