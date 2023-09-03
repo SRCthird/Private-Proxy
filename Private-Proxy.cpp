@@ -4,6 +4,7 @@
 #include "Headers/getPort.h"
 #include "Headers/stopApp.h"
 #include "Headers/readConfig.h"
+#include "Headers/createDefault.h"
 
 void displayHelp() {
     std::cout << "Usage: program [options]\n\n"
@@ -22,7 +23,9 @@ int main(int argc, char* argv[]) {
 
     if (port == -1) {
         std::cout << "Failed to get port number from config file...";
-        return 0;
+        if (createDefault() == 1) {
+            return 0;
+        }
     }
 
     std::vector<std::string> args(argv, argv + argc);
