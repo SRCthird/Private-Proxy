@@ -1,4 +1,4 @@
 {
-    "on-start": true,
-    "port": 42310
+    "port": 42310,
+    "on-start": true
 }
