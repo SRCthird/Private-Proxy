@@ -132,6 +132,7 @@
     <ClCompile Include="Private-Proxy.cpp" />
     <ClCompile Include="Source\callServer.cpp" />
     <ClCompile Include="Source\checkStatus.cpp" />
+    <ClCompile Include="Source\createDefault.cpp" />
     <ClCompile Include="Source\getPort.cpp" />
     <ClCompile Include="Source\readConfig.cpp" />
     <ClCompile Include="Source\stopApp.cpp" />
@@ -140,6 +141,7 @@
   <ItemGroup>
     <ClInclude Include="Headers\callServer.h" />
     <ClInclude Include="Headers\checkStatus.h" />
+    <ClInclude Include="Headers\createDefault.h" />
     <ClInclude Include="Headers\getPort.h" />
     <ClInclude Include="Headers\Private-Proxy.h" />
     <ClInclude Include="Headers\readConfig.h" />
