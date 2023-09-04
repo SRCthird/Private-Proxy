@@ -1,7 +1,11 @@
 #include "../Headers/createDefault.h"
 
+namespace fs = std::filesystem;
+
 int createDefault() {
     std::cout << "Creating default configuration file...\n";
+
+    fs::create_directories("./Resources");
 
     std::string filePath = "Resources/config.json";
 
