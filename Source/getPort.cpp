@@ -1,7 +1,7 @@
 #include "../Headers/getPort.h"
 
 int getPort() {
-    std::ifstream configFile("Resources/config.json");
+    std::ifstream configFile("C:/ProgramData/Private Proxy/config.json");
     if (!configFile.is_open()) {
         std::cerr << "Failed to open config.json" << std::endl;
         return -1;

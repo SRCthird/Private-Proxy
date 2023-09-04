@@ -5,9 +5,9 @@ namespace fs = std::filesystem;
 int createDefault() {
     std::cout << "Creating default configuration file...\n";
 
-    fs::create_directories("./Resources");
+    fs::create_directories("C:/ProgramData/Private Proxy");
 
-    std::string filePath = "Resources/config.json";
+    std::string filePath = "C:/ProgramData/Private Proxy/config.json";
 
     std::ofstream configFile(filePath);
     

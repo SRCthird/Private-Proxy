@@ -1,8 +1,5 @@
 #define _WINSOCK_DEPRECATED_NO_WARNINGS
 #pragma comment(lib, "ws2_32.lib")
-#include <WinSock2.h>
-#include <sstream>
-#include <cstdlib>
 #include <nlohmann/json.hpp>
 #include "../Headers/callServer.h"
 #include "../Headers/useProxy.h"
@@ -89,9 +86,9 @@ int callServer() {
 			size_t end = request.find(' ', start);
 			std::string onstart = request.substr(start, end - start);
 
-			std::ifstream input("Resources/config.json");
+			std::ifstream input("C:/ProgramData/Private Proxy/config.json");
 
-			nlohmann::json config = readConfig("Resources/config.json");
+			nlohmann::json config = readConfig("C:/ProgramData/Private Proxy/config.json");
 			if (onstart == "true") {
 				config["on-start"] = true;
 				response = "<html><body>On-Start set to true...<script>window.close();</script></body></html>";
@@ -103,7 +100,7 @@ int callServer() {
 			else {
 				response = "Invalid Request: \"on-start\" but be true or false.";
 			}
-			std::ofstream outfile("Resources/config.json");
+			std::ofstream outfile("C:/ProgramData/Private Proxy/config.json");
 			if (outfile.is_open()) {
 				outfile << config.dump(4);
 				outfile.close();
