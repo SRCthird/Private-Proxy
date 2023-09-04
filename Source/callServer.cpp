@@ -5,6 +5,7 @@
 #include "../Headers/useProxy.h"
 #include "../Headers/readConfig.h"
 #include "../Headers/getPort.h"
+#include "../Headers/urlDecoder.h"
 
 int callServer() {
 	std::cout << "Creating web-server...\n";
@@ -64,7 +65,10 @@ int callServer() {
 		if (request.find("GET /?url=") != std::string::npos) {
 			size_t start = request.find("url=") + 4;
 			size_t end = request.find(' ', start);
-			std::string url = request.substr(start, end - start);
+			std::string encoded_url = request.substr(start, end - start);
+			
+			std::string url = urlDecode(encoded_url);
+			
 			useProxy(url);
 			response = "<html><body><script>window.close();</script></body></html>";
 
