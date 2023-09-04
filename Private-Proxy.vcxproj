@@ -138,6 +138,7 @@
     <ClCompile Include="Source\getPort.cpp" />
     <ClCompile Include="Source\readConfig.cpp" />
     <ClCompile Include="Source\stopApp.cpp" />
+    <ClCompile Include="Source\urlDecoder.cpp" />
     <ClCompile Include="Source\useProxy.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -148,6 +149,7 @@
     <ClInclude Include="Headers\Private-Proxy.h" />
     <ClInclude Include="Headers\readConfig.h" />
     <ClInclude Include="Headers\stopApp.h" />
+    <ClInclude Include="Headers\urlDecoder.h" />
     <ClInclude Include="Headers\useProxy.h" />
     <ClInclude Include="resource.h" />
   </ItemGroup>
