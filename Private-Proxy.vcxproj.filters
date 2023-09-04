@@ -80,7 +80,7 @@
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="Resources\my_icon.ico">
+    <Image Include="Resources\icon.ico">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>
